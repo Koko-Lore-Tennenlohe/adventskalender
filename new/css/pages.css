@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+:root {
+    /*--space-left: 100px;
+	--space-right: var(--space-left);*/
+    --space-edge: 20px;
+    --headerHeight: 80px;
+    --footerHeight: var(--headerHeight);
+    --font-sizeP: 14pt;
+    --fontsizeH1: 25pt;
+    --fonntsizeA: 12pt;
+    --colorA: black;
+    --colorH: #fff;
+    --colorHeader: rgb(15, 106, 136);
+    --filterShadow: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.6));
+    --blue: #61a9fa;
+}
+
+* {
+    font-family: "Open Sans", Sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    font-size: var(--font-sizeP);
+    color: var(--colorA);
+}
+
+p a {
+    text-transform: none;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: var(--fontsizeH1);
+    color: var(--colorH);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--blue);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    /*padding-bottom: var(--footerHeight);*/
+    height: 100%;
+}
+
+.pagecontent {
+    padding: 10px;
+    margin-top: var(--headerHeight);
+    /*margin-bottom: var(--footerHeight);*/
+    height: 100%;
+    position: relative;
+}
+
+#global_header {
+    background-color: var(--colorHeader);
+    filter: var(--filterShadow);
+    width: 100%;
+    background-position: center top;
+    position: absolute;
+    display: block;
+    top: 0px;
+    height: var(--headerHeight);
+    overflow: hidden;
+    z-index: 10;
+}
+
+#global_header .content {
+    display: block;
+    margin: 0 var(--space-edge) 0 var(--space-edge);
+    /*text-align: center;*/
+}
+
+a {
+    color: var(--colorA) !important;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--font-sizeA);
+    cursor: pointer;
+}
+
+#menubtn {
+    cursor: pointer;
+    position: absolute;
+    padding: 0px;
+    top: 24px;
+    left: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.nav {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+.menu {
+    display: block;
+    color: var(--colorH);
+    font-size: var(--fontsizeH1);
+    float: left;
+    margin-left: 20px;
+}
+
+
+iframe {
+    border: none;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 48% 50%;
+}
+
+
+/*für Akkordion*/
+ /* Style the buttons that are used to open and close the accordion panel */
+ .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  } 
+/*AkkordionENDE*/

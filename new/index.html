@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="de" style="overflow:hidden">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/pages.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <title>Adventskalender Tennenlohe</title>
+</head>
+
+<body onload="dimCheck()" onresize="dimCheck()">
+
+    <div id="global_header">
+        <div class="content">
+            <h1 onclick="changePage('map')">Adventskalender
+            </h1>
+            <h5 style="position:relative;color:red;top: -10px;"><b>Bitte beachten Sie die g&auml;ngigen Hygieneregeln!</b></h5>
+            <div class="nav">
+                <div class="menu" onclick="changePage('map')"><span class="glyphicon glyphicon-home"></span></div>
+                <div class="menu" onclick="changePage( 'info') "><span class="glyphicon glyphicon-question-sign"></span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <iframe id="frame" width="0" height="0" src="pages/map.html " alt="Your browser obvously doesn 't support functions necessary for this website. :("></iframe>
+
+
+</body>
+
+</html>
