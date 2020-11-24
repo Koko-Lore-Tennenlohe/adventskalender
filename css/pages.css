@@ -3,10 +3,10 @@
     /*--space-left: 100px;
 	--space-right: var(--space-left);*/
     --space-edge: 20px;
-    --headerHeight: 80px;
+    --headerHeight: calc(80px + (24 - 18) * (100vw - 400px) / (800 - 600));
     --footerHeight: var(--headerHeight);
     --font-sizeP: 14pt;
-    --fontsizeH1: 25pt;
+    --fontsizeH1: calc(20pt + (24 - 18) * (100vw - 400px) / (800 - 400));
     --fonntsizeA: 12pt;
     --colorA: black;
     --colorH: #fff;
@@ -50,6 +50,10 @@ h2 {
     color: var(--blue);
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+h5 {
+    font-size: calc(10pt + (24 - 18) * (100vw - 400px) / (800 - 400));
 }
 
 body {
