@@ -4,7 +4,7 @@
 	--space-right: var(--space-left);*/
     --space-edge: 20px;
     --headerHeight: calc(80px + (24 - 18) * (100vw - 400px) / (800 - 600));
-    --footerHeight: var(--headerHeight);
+    /*--footerHeight: var(--headerHeight);*/
     --font-sizeP: 14pt;
     --fontsizeH1: calc(20pt + (24 - 18) * (100vw - 400px) / (800 - 400));
     --fonntsizeA: 12pt;
@@ -66,7 +66,7 @@ body {
 
 .pagecontent {
     padding: 10px;
-    margin-top: var(--headerHeight);
+    /*margin-top: var(--headerHeight);*/
     /*margin-bottom: var(--footerHeight);*/
     height: 100%;
     position: relative;
@@ -77,7 +77,7 @@ body {
     filter: var(--filterShadow);
     width: 100%;
     background-position: center top;
-    position: absolute;
+    /*position: absolute;*/
     display: block;
     top: 0px;
     height: var(--headerHeight);

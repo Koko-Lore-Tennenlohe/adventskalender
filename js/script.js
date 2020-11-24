@@ -3,8 +3,10 @@ var currPage = "map";
 
 function dimCheck() {
     var frame = document.getElementById("frame");
-    frame.width = "100%";
-    frame.height = "100%";
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    frame.width = w;
+    frame.height = h;
 
 }
 
